@@ -4,7 +4,7 @@
 }
 
 .project-container{
-    max-width: 1140px;
+    max-width: 100%;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -14,11 +14,15 @@
 
 .project-card{
     background: #1a1919;
-    padding:1.2rem 1rem;
+    width:400px;
+    height:400px;
+    margin-left: 80px;
 
 }
 .project-card img{
-    width:100%;
+   width:400px;
+   height:200px;
+
 }
 .project-title{
 
@@ -28,7 +32,8 @@ padding:1rem 0;
 .pro-details p{
     padding-bottom:1rem;
     font-size: 1.1rem;
-    text-align:justify;
+    text-align: left;
+    
 }
 .pro-btns{
     display:flex;

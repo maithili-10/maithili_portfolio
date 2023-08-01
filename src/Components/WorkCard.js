@@ -1,10 +1,11 @@
 import "./WorkCardStyles.css"
 import pro1 from '../images/projectmgmt.jpeg';
-
-import React from 'react'
+import { Button, InputNumber, Image } from 'antd';
+import React,{useState} from 'react'
 import { NavLink,useParams } from "react-router-dom";
 
 const WorkCard = (props) => {
+  const [visible, setVisible] = useState(false);
   const {id}=useParams();
   return (
   
@@ -15,9 +16,10 @@ const WorkCard = (props) => {
                 <div className="pro-details">
                   <p> {props.text}</p>
                   <div className="pro-btns">
-                    <NavLink to="/url.com" className="btn">View</NavLink>
-                    <NavLink to="/url.com" className="btn">Source</NavLink>
+                    <NavLink onClick={() => setVisible(true)} className="btn">View</NavLink>
+                    <NavLink  className="btn">Source</NavLink>
                   </div>
+                 
                 </div>
             </div>
          </div>
